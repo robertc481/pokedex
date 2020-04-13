@@ -77,7 +77,6 @@ const PokemonView = ({ exp, stats, name, order, height, sprites, types, weight }
    return (
       <StyledWrapper>
          <StyledHeaderImg src={PokeImg} alt="" />
-         {console.log(exp, stats, name, order, height, weight, sprites, types)}
          <StyledHeader>{order}. {name.toUpperCase()}</StyledHeader>
          <StyledPokemonImg src={sprites.front_default} alt="" />
          <StyledContainer>

@@ -27,7 +27,7 @@ const DetailsView = ({ selectedPokemon, selectedPokemonDetails, setSelectedPokem
          await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
             .then(res => res.json())
             .then(pokemonDetails => {
-               console.log(pokemonDetails)
+
                return setSelectedPokemonDetails(pokemonDetails)
             })
 

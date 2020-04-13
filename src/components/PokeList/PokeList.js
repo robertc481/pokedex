@@ -189,7 +189,7 @@ const PokeList = ({ setSelectedPokemonName, setSelectedPokemonDetails, inputValu
          </StyledFilters>
          <StyledList>
             <ul >
-               {pokemons.filter(item => item.name.includes(inputValue)).map((item, index) => <li
+               {pokemons.filter(item => item.name.includes(inputValue.toLowerCase())).map((item, index) => <li
                   onClick={() => selectPokemon(item)}
                   key={index}
                   id={item.name}>{item.name}</li>)}
